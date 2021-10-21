@@ -17,8 +17,11 @@ env:
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: 0 */48 * * *
+  #schedule:
+    #- cron: 0 */48 * * *
+    
+  watch:
+    types: [started]
 
 jobs:
   jell:
